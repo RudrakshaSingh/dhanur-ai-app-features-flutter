@@ -57,3 +57,5 @@ flutter test
 
 flutter pub get
 flutter build apk --release
+
+flutter build apk --release --split-per-abi
