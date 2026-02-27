@@ -4,15 +4,31 @@
 .flutter-plugins-dependencies
 .metadata
 .packages
+.pub/
+.pub-cache/
+**/doc/api/
+lib/generated_plugin_registrant.dart
 build/
 coverage/
+app.*.symbols
+app.*.map.json
 
 # IDE
 .idea/
 .vscode/
 *.iml
+*.ipr
+*.iws
 
 # OS
 .DS_Store
 Thumbs.db
 
+# Android (local and generated)
+android/.gradle/
+android/captures/
+android/local.properties
+android/**/GeneratedPluginRegistrant.java
+android/key.properties
+**/*.jks
+**/*.keystore

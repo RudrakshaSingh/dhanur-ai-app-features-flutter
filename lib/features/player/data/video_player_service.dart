@@ -7,7 +7,7 @@ import '../domain/video_playback_service.dart';
 
 class VideoPlayerService implements VideoPlaybackService {
   VideoPlayerController? _controller;
-  VoidCallback? _controllerListener;
+  void Function()? _controllerListener;
   final StreamController<PlaybackSnapshot> _snapshots =
       StreamController.broadcast();
 
@@ -131,4 +131,3 @@ class VideoPlayerService implements VideoPlaybackService {
     await _snapshots.close();
   }
 }
-

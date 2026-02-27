@@ -57,7 +57,7 @@ class OverlayPlayerScreen extends HookConsumerWidget {
                         const SizedBox.shrink(),
                       if (state.isLoading)
                         Container(
-                          color: Colors.black.withOpacity(0.7),
+                          color: Colors.black.withValues(alpha: 0.7),
                           child: const Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -82,7 +82,7 @@ class OverlayPlayerScreen extends HookConsumerWidget {
                         right: AppSpacing.sm,
                         child: DecoratedBox(
                           decoration: BoxDecoration(
-                            color: Colors.black.withOpacity(0.6),
+                            color: Colors.black.withValues(alpha: 0.6),
                             borderRadius: BorderRadius.circular(AppRadius.sm),
                           ),
                           child: IconButton(
@@ -366,4 +366,3 @@ class _PlayPauseIcon extends ConsumerWidget {
     );
   }
 }
-

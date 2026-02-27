@@ -25,7 +25,7 @@ abstract final class AppTheme {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      cardTheme: const CardTheme(
+      cardTheme: const CardThemeData(
         color: AppColors.surface,
         elevation: 0,
       ),

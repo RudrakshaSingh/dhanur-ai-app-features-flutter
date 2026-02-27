@@ -54,3 +54,6 @@ Then re-run `flutter pub get`.
 ```bash
 flutter test
 ```
+
+flutter pub get
+flutter build apk --release

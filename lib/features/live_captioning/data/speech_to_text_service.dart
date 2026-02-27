@@ -70,9 +70,11 @@ class SpeechToTextService implements SpeechRecognitionService {
     await _speech.listen(
       onResult: _onResult,
       localeId: localeId,
-      partialResults: partialResults,
-      cancelOnError: true,
-      listenMode: ListenMode.dictation,
+      listenOptions: SpeechListenOptions(
+        partialResults: partialResults,
+        cancelOnError: true,
+        listenMode: ListenMode.dictation,
+      ),
     );
     _isListening = true;
     _events.add(SpeechEvent.started());
@@ -125,4 +127,3 @@ class SpeechToTextService implements SpeechRecognitionService {
     await _events.close();
   }
 }
-

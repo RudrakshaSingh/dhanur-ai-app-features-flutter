@@ -265,7 +265,7 @@ class _MicrophoneSection extends StatelessWidget {
                       shape: BoxShape.circle,
                       color:
                           isEnabled
-                              ? AppColors.success.withOpacity(0.2)
+                              ? AppColors.success.withValues(alpha: 0.2)
                               : AppColors.surfaceLight,
                     ),
                   ),
